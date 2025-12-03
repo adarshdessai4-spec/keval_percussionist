@@ -8,8 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const setNavOpen = open => {
     if (open) {
       body.classList.add('nav-open');
+      toggle && toggle.classList.add('open');
     } else {
       body.classList.remove('nav-open');
+      toggle && toggle.classList.remove('open');
     }
   };
 
