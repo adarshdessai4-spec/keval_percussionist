@@ -391,6 +391,10 @@ p, li {
   scroll-behavior: smooth;
 }
 
+.thumb-grid::-webkit-scrollbar {
+  display: none;
+}
+
 .thumb {
   position: relative;
   padding-top: 68%;
@@ -667,7 +671,7 @@ p, li {
 
 @media (max-width: 820px) {
   .hero { padding: 120px 18px 90px; }
-  .hero-frame { max-width: 720px; border-width: 4px; }
+  .hero-frame { max-width: 720px; width: 100%; border-width: 4px; }
   .logo-overlay { font-size: clamp(44px, 14vw, 92px); }
   .video-panel { padding: 24px; }
   .thumb-grid { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
@@ -678,12 +682,13 @@ p, li {
 
 @media (max-width: 640px) {
   .hero { padding-top: 110px; }
-  .hero-frame { border-width: 4px; }
+  .hero-frame { border-width: 4px; max-width: 100%; }
   .vertical-tag { font-size: 16px; letter-spacing: 1.5px; }
   .video-panel { padding: 22px; }
   .thumb-grid { grid-auto-columns: minmax(140px, 70%); }
   .playlist-group h3 { font-size: 18px; }
   .contact-card { padding: 50px 24px; }
+  .videos, .about, .contact { padding: 100px 18px; }
 }
 
 @media (max-width: 480px) {
@@ -691,8 +696,9 @@ p, li {
   .hero-shell { gap: 18px; }
   .vertical-tag { padding: 6px 10px; }
   .logo-overlay { font-size: clamp(36px, 16vw, 78px); }
-  .thumb-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .thumb-grid { grid-auto-columns: minmax(140px, 85%); }
   .video-panel { padding: 18px; border-radius: 16px; }
   .about-inner { grid-template-columns: 1fr; }
   .contact-card { padding: 42px 20px; }
+  .videos, .about, .contact { padding: 90px 14px; }
 }
