@@ -165,12 +165,23 @@ p, li {
   box-shadow: inset 0 -160px 220px rgba(0, 0, 0, 0.75);
 }
 
+.hero-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.65;
+  filter: grayscale(15%) contrast(110%) saturate(115%);
+  pointer-events: none;
+}
+
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.35));
-  opacity: 0.75;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.25));
+  opacity: 0.6;
   mix-blend-mode: normal;
 }
 
@@ -272,7 +283,7 @@ p, li {
   position: absolute;
   inset: 0;
   background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.03), transparent 70%), var(--smoke) center/cover no-repeat;
-  opacity: 0.34;
+  opacity: 0.18;
   mix-blend-mode: screen;
   pointer-events: none;
 }
