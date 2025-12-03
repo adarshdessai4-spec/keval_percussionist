@@ -56,6 +56,24 @@ a { color: var(--text); text-decoration: none; }
   width: 28px;
   height: 28px;
 }
+.whatsapp-fab img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.floating-signature {
+  position: fixed;
+  bottom: 16px;
+  right: 74px;
+  font-family: 'Allura', cursive;
+  font-size: 34px;
+  color: rgba(245, 193, 92, 0.75);
+  text-shadow: 0 6px 16px rgba(0, 0, 0, 0.5), 0 0 10px rgba(245, 193, 92, 0.35);
+  pointer-events: none;
+  z-index: 9;
+  opacity: 0.9;
+}
 
 .top-nav {
   position: fixed;
