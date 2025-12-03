@@ -461,9 +461,12 @@ p, li {
   grid-auto-flow: column;
   grid-auto-columns: minmax(160px, 1fr);
   gap: 12px;
-  overflow: hidden;
-  padding: 2px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 2px 2px 8px;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 8px;
   touch-action: pan-x;
   -ms-touch-action: pan-x;
   overscroll-behavior: contain;
@@ -483,6 +486,7 @@ p, li {
   border: 3px solid #1b1b1b;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
   transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
+  scroll-snap-align: start;
 }
 
 .thumb::after {
