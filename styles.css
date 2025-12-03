@@ -26,6 +26,7 @@ body {
   letter-spacing: 0.1px;
   overflow-x: hidden;
   position: relative;
+  touch-action: manipulation;
 }
 
 a { color: var(--text); text-decoration: none; }
